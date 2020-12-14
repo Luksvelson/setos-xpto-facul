@@ -26,6 +26,12 @@
       src: Back
       dest: C:\inetpub\wwwroot\Back
       force: yes
+  
+  - name: Copy files to wwwroot
+    win_copy:
+      src: Back
+      dest: C:\inetpub\wwwroot\Back
+      force: yes
 
   - name: install net core iis hosting module with no frameworks
     win_chocolatey:
